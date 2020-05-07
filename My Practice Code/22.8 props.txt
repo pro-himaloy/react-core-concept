@@ -1,0 +1,28 @@
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>I'm a react person</p>
+        <Person name= "Rubel" nayika = "Mousumi"></Person>
+        <Person name= "Joshim" nayika = "Shabana"></Person>
+        <Person name= "Bapparaz" nayika = "Cheka"></Person>
+      </header>
+    </div>
+  );
+}
+function Person(props) {
+  const personStyle = {
+    border: '2px solid red',
+    margin: '10px'
+  }
+  return (
+  <div style = {personStyle}>
+  <h1>Name: {props.name}</h1>
+  <h3>Hero of {props.nayika}</h3>
+  </div>) 
+}
+export default App;
